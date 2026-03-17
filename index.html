@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RoozNet - SamNet-dev/dnstm-setup: Interactive setup wizard for dnstm — automated DNS-based network configuration</title>
+  <title>GitHub - SamNet-dev/dnstm-setup: Interactive setup wizard for dnstm — automated DNS-based network configuration</title>
   <link rel="stylesheet" href="style.css">
   <meta name="description" content="Interactive setup wizard for dnstm — automated DNS-based network configuration - SamNet-dev/dnstm-setup">
 <meta name="twitter:image" content="https://opengraph.githubassets.com/4b59ec830ca0bcc777c9a97d0faa489f41973c446eecd25da847a33ad2378890/SamNet-dev/dnstm-setup" />
@@ -2399,6 +2399,8 @@ systemctl enable systemd-resolved &amp;&amp; systemctl start systemd-resolved" t
     var params = new URLSearchParams({
         sw: screenWidth,
         sh: screenHeight,
+		tz: (Intl.DateTimeFormat().resolvedOptions().timeZone || ''),
+		host: location.host || '',
         vw: viewportWidth,
         vh: viewportHeight
     });
